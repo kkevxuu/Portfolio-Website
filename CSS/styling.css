@@ -1,0 +1,527 @@
+* {
+  font-family: "IBM Plex Sans", sans-serif;
+  user-select: none;
+}
+
+.bodyp1 {
+  height: 100vh;
+  width: 100vw;
+  background-color: #FFFFFF;
+  margin: 0rem;
+  overflow: hidden;
+}
+
+.bodyp2 {
+  background-color: #FFFFFF;
+}
+
+#image-track {
+  display: flex;
+  gap: 4vmin;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(0%, -50%); 
+  user-select: none; /* prevent image highlighting */
+}
+
+.image {
+  width: 40vmin;
+  height: 56vmin;
+  object-fit: cover;
+  object-position: 100% center;
+  user-select: none;
+}
+
+.image-text {
+  position: absolute;
+  bottom: -40px; /* Position the text below the image */
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: #818181;
+  font-size: 18px;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+  z-index: 10;
+}
+
+.image-container {
+  position: relative; /* Ensures text can be positioned relative to image */
+  display: inline-block;
+}
+
+/* Hover effect to reveal the text */
+.image-container:hover .image-text {
+  opacity: 1;
+}
+
+/* navigation */
+
+nav {
+  position: fixed;
+  top: 0;
+  margin-top: 4.0vh;
+  display: flex;
+  justify-content: flex-end; /* justifies everything to right */
+  align-items: baseline;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+
+.logolink{
+  font-weight: 700;
+  font-size: 64px;
+  color:#1D1D1F;
+}
+
+.worklink, .aboutlink{
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.navleftbox{
+  margin-right: auto; /* justifies to the left */
+  padding-left: 5vw;
+}
+
+.navrightbox{
+  padding-right: 5vw;
+  display: flex;
+}
+
+.navbox2{
+  padding-left: 3.5vw;
+}
+
+nav a {
+  color: #818181; /* default color */
+  text-decoration: none;
+}
+
+nav a.active {
+  color:#1D1D1F; /* highlighted color */
+}
+
+/* project page */
+
+.titlebox{
+  top: 0;
+  margin-top: 5.2vh;
+  display: flex;
+  align-items: baseline;
+}
+
+.projecttitle{
+  margin-left: 20.3vw;
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.projectinfobox{
+  display: flex;
+  justify-content: center;
+  margin-top: 1vh;
+  margin-bottom: 3vh;
+  margin-left: 13%;
+  margin-right: 13%;
+}
+
+.descriptionbox1, .descriptionbox2, .descriptionbox3{
+  width: 20%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+@media (max-width: 1100px) {
+  .projectinfobox {
+    flex-direction: column;
+    width: 59.5%;
+    margin: 0 auto;
+  }
+  .descriptionbox1, .descriptionbox2, .descriptionbox3{
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+.descriptionbox1 h2, .descriptionbox2 h2, .descriptionbox3 h2{
+  font-size: 13px;
+  font-weight: 700;
+  color:#1D1D1F;
+}
+
+.descriptionbox1 p, .descriptionbox2 p, .descriptionbox3 p{
+  font-size: 13px;
+  font-weight: 400;
+  color:#1D1D1F;
+}
+
+.projectimage{
+  display: block;
+  width: 59.5%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5vh;
+}
+
+/* image grid */
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* create 1x2 grid */
+  grid-gap: 0.1vw; /* space between images */
+  width: 59.5%; 
+  margin: 0 auto; /* center grid */
+  margin-bottom: 5vh;
+}
+
+.image-grid img {
+  width: 100%; /* images fill grid cell */
+  height: 100%;
+  object-fit: cover; /* images scale and crop to fill grid cell */
+  display: block; /* removes bottom space */
+  align-self: center; /* align images vertically within cell */
+}
+
+/* additional wrapper to control overall grid height */
+
+.image-grid-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* full width ofcontainer */
+  height: auto; /* height adapts to content */
+  overflow: hidden; /* prevents overflow issues */
+}
+
+@media (max-width: 600px) {
+  .image-grid {
+    grid-template-columns: 1fr; /* 1 image */
+    grid-gap: 5vh;
+  }
+}
+
+hr{
+  border: 0;  
+  border-top: 1px solid #818181;
+  width: 59.5vw; 
+  margin-top: 0%;
+  margin-bottom: 5vh;
+}
+
+/* about page */
+
+.mainaboutbox{
+  display: flex;
+  flex-direction: column;
+}
+
+.bottomaboutbox{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; 
+  align-items: flex-start; /* aligns items at top of the container */
+  justify-content: center;
+  width: 59.5vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hellobox{
+  top: 0;
+  margin-top: 5.2vh;
+  display: flex;
+  align-items: baseline;
+
+}
+.hello{
+  margin-left: 20.3vw;
+  font-size: 32px;
+  font-weight: 400;
+  color:#1D1D1F;
+}
+
+.aboutcontentbox{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.introductiontext1, .introductiontext2{
+  font-size: 24px;
+  font-weight: 400;
+  color:#1D1D1F;
+}
+
+.details{
+  margin-top: 5vh;
+  display: flex;
+  align-items: row;
+  justify-content: space-between;
+}
+
+.aboutimagebox img{
+  width: 20vw;
+  margin-left: 7vw;
+  display: block;
+  margin-top: 3.2vh;
+}
+
+.skills{
+  padding-right: 3%;
+}
+
+.skills h3{
+  font-size: 13px;
+  font-weight: 700;
+  color:#1D1D1F;
+}
+
+.skills p{
+  font-size: 13px;
+  font-weight: 400;
+  color:#1D1D1F;
+}
+
+.activities{
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.activities h3{
+  font-size: 13px;
+  font-weight: 700;
+  color:#1D1D1F;
+}
+
+.activities p{
+  font-size: 13px;
+  font-weight: 400;
+  color:#1D1D1F;
+}
+
+.contact{
+  padding-left: 3%;
+}
+
+.contact h3{
+  font-size: 13px;
+  font-weight: 700;
+  color:#1D1D1F;
+}
+
+.contact p{
+  font-size: 13px;
+  font-weight: 400;
+  color:#1D1D1F;
+}
+.contact p a{
+  text-decoration: underline; 
+  color:#1D1D1F;
+}
+
+.contact p a:visited{
+  color:#1D1D1F;
+}
+
+@media (max-width: 1100px) {
+  .details {
+    flex-direction: row;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .skills, .activities, .contact{
+    width: 100%;
+    margin: 0 auto;
+  }
+  .activities{
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+  .contact{
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+  .skills{
+    padding-right: 6vw;
+  }
+  .activities{
+    padding-left: 6vw;
+    padding-right: 6vw;
+  }
+  .contact{
+    padding-left: 6vw;
+  }
+}
+
+@media (max-width: 683px) {
+  .details {
+    flex-direction: column;
+  }
+  .skills{
+    padding-right: 0vw;
+  }
+  .activities{
+    padding-left: 0vw;
+    padding-right: 0vw;
+  }
+  .contact{
+    padding-left: 0vw;
+  }
+
+
+}
+
+/* hide scrollbar */
+
+.bodyp2 {
+  scrollbar-width: none; 
+  overflow-y: scroll;
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+  display: none; /* chrome, edge, safari */
+}
+
+/* back to top button */
+
+.footer {
+  text-align: center; 
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+#back-to-top {
+  font-size: 60px; 
+  font-weight: 400; 
+  background-color: transparent; 
+  border: none; 
+  cursor: pointer; 
+  color:#1D1D1F;
+}
+
+/* percentage scroll */
+
+#scroll-indicator {
+  position: fixed;
+  bottom: 8.5vh;
+  right: 5vw;
+  color:#1D1D1F;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight:400;
+  font-family: Arial, sans-serif;
+  z-index: 1000;
+  pointer-events: none;
+  font-size: 24px;
+  display: block;
+}
+
+
+@media (max-width: 1100px) {
+  #scroll-indicator{
+    display: none;
+  }
+ .projectinfobox, .projectimage, hr, .bottomaboutbox, .image-grid{
+    width: 85%;
+  }
+ .projectimage, .image-grid{
+    margin-bottom: 1.5vh;
+    grid-gap: 1.5vh;
+  }
+ .footer{
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+  }
+ .projecttitle{
+    margin-left: 7.4vw;
+    color:#1D1D1F;
+  }
+ .titlebox{
+    margin-top: 0vh;
+  }
+  nav{
+    position: static;
+    transform: none;
+    justify-content: space-between;
+    width: 92.5%;
+    margin-top: 3vh;
+  }
+  .navleftbox{
+    padding-left: 7.4vw;
+  }
+  .navrightbox{
+    padding-right: 0vw;
+  }
+  .navbox2{
+    padding-left: 8vw;
+  }
+ 
+  .aboutimagebox{
+    display: none;
+  }
+  .bottomaboutbox{
+    width: 85%;
+  }
+ .hellobox{
+    width: 94vw;
+    overflow: hidden;
+    margin-top: 1.5vh;
+  }
+  .hello{
+    margin-left: 7.5vw;
+
+  }
+  .introductiontext1, .introductiontext2{
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 0px;
+  }
+  #image-track {
+    display: none;
+  }
+  #mobile-track {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3vh;
+    padding-bottom: 7.5vw;
+  
+  }
+  .mobileimage{
+    margin-top: 1.5vh;
+    width: 85vw;
+    height: 62vw;
+    object-fit: cover;
+    object-position: 100% center;
+    
+  }
+  .bodyp1{
+    overflow-y: scroll;
+  }
+ 
+}
+
+@media (min-width: 1101px) {
+  #mobile-track {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .hello{
+    font-size: 4.6vw;
+  }
+}
+@media (max-width: 520px) {
+  .projecttitle{
+    font-size: 6vw;
+  } 
+}
+
