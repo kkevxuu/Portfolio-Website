@@ -23,6 +23,7 @@
   top: 50%;
   transform: translate(0%, -50%); 
   user-select: none; /* prevent image highlighting */
+
 }
 
 .image {
@@ -35,7 +36,7 @@
 
 .image-text {
   position: absolute;
-  bottom: -40px; /* Position the text below the image */
+  bottom: -40px; /* position the text below the image */
   left: 0;
   width: 100%;
   text-align: center;
@@ -46,15 +47,25 @@
   z-index: 10;
 }
 
+.mobile-image-text{
+  position: absolute;
+  bottom: -30px; /* position the text below the image */
+  left: 0;
+  width: 100%;
+  text-align: left;
+  color: #000000;
+  font-size: 18px;
+  z-index: 10;
+  margin-left: 1vw;
+}
+
 .image-container {
   position: relative; /* Ensures text can be positioned relative to image */
   display: inline-block;
+
+
 }
 
-/* Hover effect to reveal the text */
-.image-container:hover .image-text {
-  opacity: 1;
-}
 
 /* navigation */
 
@@ -490,12 +501,13 @@ hr{
     width: 85%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 3vh;
-    padding-bottom: 7.5vw;
+    margin-top: -3vh;
+    padding-bottom: 20vw;
   
   }
   .mobileimage{
-    margin-top: 1.5vh;
+    margin-top: 6.5vh;
+
     width: 85vw;
     height: 62vw;
     object-fit: cover;

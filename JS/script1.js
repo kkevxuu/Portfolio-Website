@@ -71,3 +71,23 @@ document.addEventListener("wheel", function(e) {
 document.addEventListener("gesturestart", function(e) {
   e.preventDefault(); // for pinch to zoom
 });
+
+// hover reveals text
+
+const images = document.querySelectorAll('.image');
+const imageTexts = document.querySelectorAll('.image-text');
+
+// Loop through each image and attach event listeners
+images.forEach((image, index) => {
+  const imageText = imageTexts[index]; // Corresponding image-text for each image
+
+  // Mouse enter (hover on image)
+  image.addEventListener('mouseenter', () => {
+    imageText.style.opacity = '1'; // Show text
+  });
+
+  // Mouse leave (hover off image)
+  image.addEventListener('mouseleave', () => {
+    imageText.style.opacity = '0'; // Hide text
+  });
+});
