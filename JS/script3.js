@@ -19,7 +19,7 @@
   }
 
 function revealDescription() {
-    const descriptions = document.querySelectorAll(".introductiontext1, .introductiontext2, .skills h3, .skills p, .activities h3, .activities p, .contact h3, .contact p"); // Targets all <p> tags inside description boxes
+    const descriptions = document.querySelectorAll(".introductiontext1, .introductiontext2, .skills h3, .skills p, .activities h3, .activities p, .contact h3, .contact p"); // targets all <p> tags inside description boxes
     gsap.set(descriptions, { opacity: 0, y: -10 }); 
   
     gsap.to(descriptions, {
