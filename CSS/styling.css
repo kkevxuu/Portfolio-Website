@@ -23,7 +23,6 @@
   top: 50%;
   transform: translate(0%, -50%); 
   user-select: none; /* prevent image highlighting */
-
 }
 
 .image {
@@ -63,10 +62,7 @@
 .image-container {
   position: relative; /* Ensures text can be positioned relative to image */
   display: inline-block;
-
-
 }
-
 
 /* navigation */
 
@@ -146,41 +142,6 @@ nav a.active {
   margin-right: 5%;
 }
 
-/* mobile project page */
-
-@media (max-width: 1100px) {
-  .projectinfobox {
-    flex-direction: column;
-    width: 59.5%;
-    margin: 0 auto;
-  }
-  .descriptionbox1, .descriptionbox2, .descriptionbox3{
-    width: 100%;
-    margin: 0 auto;
-  }
-  #scroll-indicator{
-    display: none;
-  }
- .projectinfobox, .projectimage, hr, .bottomaboutbox, .image-grid{
-    width: 85%;
-  }
- .projectimage, .image-grid{
-    margin-bottom: 1.5vh;
-    grid-gap: 1.5vh;
-  }
- .footer{
-    margin-top: 1vh;
-    margin-bottom: 1vh;
-  }
- .projecttitle{
-    margin-left: 7.4vw;
-    color:#1D1D1F;
-  }
- .titlebox{
-    margin-top: 0vh;
-  }
-}
-
 .descriptionbox1 h2, .descriptionbox2 h2, .descriptionbox3 h2{
   font-size: 13px;
   font-weight: 700;
@@ -229,13 +190,6 @@ nav a.active {
   width: 100%; /* full width ofcontainer */
   height: auto; /* height adapts to content */
   overflow: hidden; /* prevents overflow issues */
-}
-
-@media (max-width: 600px) {
-  .image-grid {
-    grid-template-columns: 1fr; /* 1 image */
-    grid-gap: 5vh;
-  }
 }
 
 hr{
@@ -361,74 +315,6 @@ hr{
   color:#1D1D1F;
 }
 
-/* mobile about page */
-
-@media (max-width: 1100px) {
-  .details {
-    flex-direction: row;
-    width: 100%;
-    margin: 0 auto;
-  }
-  .skills, .activities, .contact{
-    width: 100%;
-    margin: 0 auto;
-  }
-  .activities{
-    padding-left: 0%;
-    padding-right: 0%;
-  }
-  .contact{
-    padding-left: 0%;
-    padding-right: 0%;
-  }
-  .skills{
-    padding-right: 6vw;
-  }
-  .activities{
-    padding-left: 6vw;
-    padding-right: 6vw;
-  }
-  .contact{
-    padding-left: 6vw;
-  }
-  
-  .aboutimagebox{
-    display: none;
-  }
-  .bottomaboutbox{
-    width: 85%;
-  }
-  .hellobox{
-    width: 94vw;
-    overflow: hidden;
-    margin-top: 1.5vh;
-  }
-  .hello{
-    margin-left: 7.5vw;
-  }
-  .introductiontext1, .introductiontext2{
-    font-size: 20px;
-    font-weight: 400;
-    margin-top: 0px;
-  }
-}
-
-@media (max-width: 683px) {
-  .details {
-    flex-direction: column;
-  }
-  .skills{
-    padding-right: 0vw;
-  }
-  .activities{
-    padding-left: 0vw;
-    padding-right: 0vw;
-  }
-  .contact{
-    padding-left: 0vw;
-  }
-}
-
 /* hide scrollbar */
 
 .bodyp2 {
@@ -475,7 +361,7 @@ hr{
   display: block;
 }
 
-/* mobile gallery page */
+/* media query */
 
 @media (max-width: 1100px) {
   nav{
@@ -514,8 +400,105 @@ hr{
     object-fit: cover;
     object-position: 100% center;
   }
+
+  /* mobile project page */
+
   .bodyp1{
     overflow-y: scroll;
+  }
+  .projectinfobox {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .descriptionbox1, .descriptionbox2, .descriptionbox3{
+    width: 100%;
+    margin: 0 auto;
+  }
+  #scroll-indicator{
+    display: none;
+  }
+  .projectinfobox, .projectimage, hr, .bottomaboutbox, .image-grid{
+    width: 85%;
+  }
+  .projectimage, .image-grid{
+    margin-bottom: 1.5vh;
+    grid-gap: 1.5vh;
+  }
+  .footer{
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+  }
+  .projecttitle{
+    margin-left: 7.4vw;
+    color:#1D1D1F;
+  }
+  .titlebox{
+    margin-top: 0vh;
+  }
+
+  /* mobile about page */
+
+  .details {
+    flex-direction: row;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .skills, .activities, .contact{
+    width: 100%;
+    margin: 0 auto;
+  }
+  .skills{
+    padding-right: 6vw;
+  }
+  .activities{
+    padding-left: 6vw;
+    padding-right: 6vw;
+  }
+  .contact{
+    padding-left: 6vw;
+    padding-right: 0vw;
+  }
+  .aboutimagebox{
+    display: none;
+  }
+  .bottomaboutbox{
+    width: 85%;
+  }
+  .hellobox{
+    width: 94vw;
+    overflow: hidden;
+    margin-top: 1.5vh;
+  }
+  .hello{
+    margin-left: 7.5vw;
+  }
+  .introductiontext1, .introductiontext2{
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 0px;
+  }
+}
+
+@media (max-width: 683px) {
+  .details {
+    flex-direction: column;
+  }
+  .skills{
+    padding-right: 0vw;
+  }
+  .activities{
+    padding-left: 0vw;
+    padding-right: 0vw;
+  }
+  .contact{
+    padding-left: 0vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .image-grid {
+    grid-template-columns: 1fr; /* 1 image */
+    grid-gap: 5vh;
   }
 }
 
