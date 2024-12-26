@@ -46,19 +46,6 @@
   z-index: 10;
 }
 
-.mobile-image-text{
-  position: absolute;
-  bottom: -30px; /* position the text below the image */
-  left: 0;
-  width: 100%;
-  text-align: left;
-  color: #000000;
-  font-size: 18px;
-  z-index: 10;
-  margin-left: 1vw;
-  margin-bottom: 5.6vh;
-}
-
 .image-container {
   position: relative; /* Ensures text can be positioned relative to image */
   display: inline-block;
@@ -394,11 +381,22 @@ hr{
     padding-bottom: 20vw;
   }
   .mobileimage{
-    margin-bottom: 5.6vh;
+    margin-bottom: 0.5vh;
     width: 85vw;
     height: 62vw;
     object-fit: cover;
     object-position: 100% center;
+  }
+  .mobile-image-text{
+    bottom: -30px; /* position the text below the image */
+    left: 0;
+    width: 100%;
+    text-align: left;
+    color: #000000;
+    font-size: 18px;
+    z-index: 10;
+    margin-left: 1vw;
+    margin-bottom: 2vh;
   }
 
   /* mobile project page */
