@@ -420,7 +420,6 @@ hr{
   }
   .projectimage, .image-grid{
     margin-bottom: 1.5vh;
-    grid-gap: 1.5vh;
   }
   .footer{
     margin-top: 1vh;
@@ -496,7 +495,7 @@ hr{
 @media (max-width: 600px) {
   .image-grid {
     grid-template-columns: 1fr; /* 1 image */
-    grid-gap: 5vh;
+    grid-gap: 1.5vh;
   }
 }
 
