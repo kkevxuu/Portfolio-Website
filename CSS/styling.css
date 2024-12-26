@@ -57,6 +57,7 @@
   font-size: 18px;
   z-index: 10;
   margin-left: 1vw;
+  margin-bottom: 5.6vh;
 }
 
 .image-container {
@@ -145,6 +146,8 @@ nav a.active {
   margin-right: 5%;
 }
 
+/* mobile project page */
+
 @media (max-width: 1100px) {
   .projectinfobox {
     flex-direction: column;
@@ -154,6 +157,27 @@ nav a.active {
   .descriptionbox1, .descriptionbox2, .descriptionbox3{
     width: 100%;
     margin: 0 auto;
+  }
+  #scroll-indicator{
+    display: none;
+  }
+ .projectinfobox, .projectimage, hr, .bottomaboutbox, .image-grid{
+    width: 85%;
+  }
+ .projectimage, .image-grid{
+    margin-bottom: 1.5vh;
+    grid-gap: 1.5vh;
+  }
+ .footer{
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+  }
+ .projecttitle{
+    margin-left: 7.4vw;
+    color:#1D1D1F;
+  }
+ .titlebox{
+    margin-top: 0vh;
   }
 }
 
@@ -337,6 +361,8 @@ hr{
   color:#1D1D1F;
 }
 
+/* mobile about page */
+
 @media (max-width: 1100px) {
   .details {
     flex-direction: row;
@@ -365,6 +391,26 @@ hr{
   .contact{
     padding-left: 6vw;
   }
+  
+  .aboutimagebox{
+    display: none;
+  }
+  .bottomaboutbox{
+    width: 85%;
+  }
+  .hellobox{
+    width: 94vw;
+    overflow: hidden;
+    margin-top: 1.5vh;
+  }
+  .hello{
+    margin-left: 7.5vw;
+  }
+  .introductiontext1, .introductiontext2{
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 0px;
+  }
 }
 
 @media (max-width: 683px) {
@@ -381,8 +427,6 @@ hr{
   .contact{
     padding-left: 0vw;
   }
-
-
 }
 
 /* hide scrollbar */
@@ -431,29 +475,9 @@ hr{
   display: block;
 }
 
+/* mobile gallery page */
 
 @media (max-width: 1100px) {
-  #scroll-indicator{
-    display: none;
-  }
- .projectinfobox, .projectimage, hr, .bottomaboutbox, .image-grid{
-    width: 85%;
-  }
- .projectimage, .image-grid{
-    margin-bottom: 1.5vh;
-    grid-gap: 1.5vh;
-  }
- .footer{
-    margin-top: 1vh;
-    margin-bottom: 1vh;
-  }
- .projecttitle{
-    margin-left: 7.4vw;
-    color:#1D1D1F;
-  }
- .titlebox{
-    margin-top: 0vh;
-  }
   nav{
     position: static;
     transform: none;
@@ -470,27 +494,6 @@ hr{
   .navbox2{
     padding-left: 8vw;
   }
- 
-  .aboutimagebox{
-    display: none;
-  }
-  .bottomaboutbox{
-    width: 85%;
-  }
- .hellobox{
-    width: 94vw;
-    overflow: hidden;
-    margin-top: 1.5vh;
-  }
-  .hello{
-    margin-left: 7.5vw;
-
-  }
-  .introductiontext1, .introductiontext2{
-    font-size: 20px;
-    font-weight: 400;
-    margin-top: 0px;
-  }
   #image-track {
     display: none;
   }
@@ -501,23 +504,19 @@ hr{
     width: 85%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -3vh;
+    margin-top: 3vh;
     padding-bottom: 20vw;
-  
   }
   .mobileimage{
-    margin-top: 6.5vh;
-
+    margin-bottom: 5.6vh;
     width: 85vw;
     height: 62vw;
     object-fit: cover;
     object-position: 100% center;
-    
   }
   .bodyp1{
     overflow-y: scroll;
   }
- 
 }
 
 @media (min-width: 1101px) {
