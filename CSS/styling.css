@@ -149,6 +149,41 @@ nav a.active {
   margin-bottom: 5vh;
 }
 
+
+.smallsubbox{
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  flex-direction: column;
+  width: 59.5%;
+  margin-bottom: 2.5vh;
+  margin-top: -4.5vh;
+}
+.bigsubbox{
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  flex-direction: column;
+  width: 59.5%;
+  margin-bottom: 10vh;
+  margin-top: 10vh;
+}
+
+.subtitle{
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 0.5vh;
+  
+}
+
+.subtext{
+  font-size: 15px;
+  
+}
+
+
 /* image grid */
 
 .image-grid {
@@ -339,7 +374,6 @@ hr{
   right: 5vw;
   color:#1D1D1F;
   border-radius: 5px;
-  font-size: 14px;
   font-weight:400;
   font-family: Arial, sans-serif;
   z-index: 1000;
@@ -431,6 +465,13 @@ hr{
   }
   .titlebox{
     margin-top: 0vh;
+  }
+  .smallsubbox{
+    width: 85%;
+    margin-top: -1vh;
+  }
+  .bigsubbox{
+    width: 85%;
   }
 
   /* mobile about page */

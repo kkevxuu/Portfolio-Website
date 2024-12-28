@@ -34,30 +34,13 @@
     });
   }
   
-// function to trigger animation when an element scrolls into view
+// trigger on page load instead
 
-  function onScrollIntoView(element, callback) {
-      const observer = new IntersectionObserver((entries) => {
-          entries.forEach(entry => {
-              if (entry.isIntersecting) {
-                  callback();
-                  observer.unobserve(entry.target); // unobserve after the callback is triggered
-              }
-          });
-      }, { threshold: 0.1 }); // threshold adjustment 
-  
-      observer.observe(element);
-  }
-  
-  // all elements to observe
-  const titleElement = document.querySelector(".projecttitle"); 
-  const descriptionElements = document.querySelectorAll(".descriptionbox1 p, .descriptionbox2 p, .descriptionbox3 p, .descriptionbox1 h2, .descriptionbox2 h2, .descriptionbox3 h2");
-  
-  // trigger when scroll into view
-  onScrollIntoView(titleElement, revealText);
-  descriptionElements.forEach(element => {
-      onScrollIntoView(element, revealDescription);
-  });
+document.addEventListener("DOMContentLoaded", () => {
+  revealText();
+  revealDescription();
+});
+
   
 // OTHER ELEMENTS
 
