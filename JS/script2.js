@@ -22,7 +22,7 @@
 // description animation
   
   function revealDescription() {
-    const descriptions = document.querySelectorAll(".descriptionbox1 p, .descriptionbox2 p, .descriptionbox3 p, .descriptionbox1 h2, .descriptionbox2 h2, .descriptionbox3 h2"); 
+    const descriptions = document.querySelectorAll(".descriptionbox1 p, .descriptionbox2 p, .descriptionbox3 p, .descriptionbox1 h2, .descriptionbox2 h2, .descriptionbox3 h2, .subtitle, .subtext"); 
     gsap.set(descriptions, { opacity: 0, y: -10 });
   
     gsap.to(descriptions, {
