@@ -1,6 +1,7 @@
 // PARALLAX TRACK
 
 const track = document.getElementById("image-track");
+const scrollText = document.getElementById("scroll-text");
 
 // check saved position in localStorage
 
@@ -24,7 +25,24 @@ const updateTrackPosition = (nextPercentage) => {
     objectPosition: `${100 + nextPercentage * 1}% center`, // adjust parallax effect
     ease: "power3.out"
   });
+
+
+  // Show or hide "Scroll" text only at the initial position (-23)
+  if (nextPercentage === -23) {
+    scrollText.style.opacity = "1"; // Show text at the initial position
+  } else {
+    scrollText.style.opacity = "0"; // Hide text otherwise
+  }
 };
+
+// Set initial visibility of "Scroll" text on page load
+if (initialPosition === -23) {
+  scrollText.style.opacity = "1"; // Show "Scroll" if at the initial position
+} else {
+  scrollText.style.opacity = "0"; // Hide "Scroll" otherwise
+}
+
+
 
 // scrolling function
 
@@ -91,3 +109,9 @@ images.forEach((image, index) => {
     imageText.style.opacity = '0'; // Hide text
   });
 });
+
+
+
+
+
+

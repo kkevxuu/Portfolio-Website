@@ -51,6 +51,21 @@
   display: inline-block;
 }
 
+/* "Scroll" text styling */
+.scroll-text {
+  position: fixed;
+  bottom: 7.5vh;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 18px;
+  font-weight: 400;
+  color: #818181;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+
 /* navigation */
 
 nav {
@@ -432,7 +447,10 @@ hr{
     margin-left: 1vw;
     margin-bottom: 2.5vh;
   }
-
+  .scroll-text {
+    display: none;
+  }
+  
   /* mobile project page */
 
   .bodyp1{
