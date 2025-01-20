@@ -57,13 +57,12 @@ const handleScroll = (delta) => {
 // scrollwheel event listener (updated for horizontal scrolling)
 window.addEventListener("wheel", (e) => {
   if (e.deltaX !== 0) {
+    e.preventDefault(); // Prevent default navigation behavior (back/forward)
     handleScroll(-e.deltaX * 0.05); // Use horizontal scrolling (deltaX)
   } else if (e.deltaY !== 0) {
     handleScroll(e.deltaY > 0 ? -2 : 2); // Fallback to vertical scrolling
   }
-  e.preventDefault(); // Prevent default navigation behavior
-}, { passive: false });
-
+}, { passive: false }); // { passive: false } added to allow preventDefault to work
 // arrowkeys event listener
 
 window.addEventListener("keydown", (e) => {
