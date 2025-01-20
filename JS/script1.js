@@ -54,11 +54,15 @@ const handleScroll = (delta) => {
   updateTrackPosition(nextPercentage);
 };
 
-// scrollwheel event listener
-
+// scrollwheel event listener (updated for horizontal scrolling)
 window.addEventListener("wheel", (e) => {
-  handleScroll(e.deltaY > 0 ? -2 : 2); // adjust scrolling speed
-});
+  if (e.deltaX !== 0) {
+    handleScroll(-e.deltaX * 0.05); // Use horizontal scrolling (deltaX)
+  } else if (e.deltaY !== 0) {
+    handleScroll(e.deltaY > 0 ? -2 : 2); // Fallback to vertical scrolling
+  }
+  e.preventDefault(); // Prevent default navigation behavior
+}, { passive: false });
 
 // arrowkeys event listener
 
@@ -109,6 +113,9 @@ images.forEach((image, index) => {
     imageText.style.opacity = '0'; // Hide text
   });
 });
+
+
+
 
 
 
