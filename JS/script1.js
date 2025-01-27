@@ -56,7 +56,7 @@ const handleScroll = (delta) => {
 
 // scrollwheel event listener (updated for horizontal scrolling)
 window.addEventListener("wheel", (e) => {
-  e.preventDefault(); // Prevent default navigation behavior (back/forward)
+  /*e.preventDefault(); // Prevent default navigation behavior (back/forward)*/
 
   if (e.deltaX !== 0) {
     handleScroll(-e.deltaX * 0.05); // Use horizontal scrolling (deltaX)
