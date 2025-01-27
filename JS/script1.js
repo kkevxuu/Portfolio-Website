@@ -63,7 +63,7 @@ window.addEventListener("wheel", (e) => {
   } else if (e.deltaY !== 0) {
     // Check for touchpad scroll behavior by checking deltaMode and deltaY value range
     if (e.deltaMode == 0) {
-      handleScroll(e.deltaY > 0 ? -1 : 1); // Adjust for small deltaY (slow scroll)
+      handleScroll(-e.deltaY * 0.05); // Adjust for small deltaY (slow scroll)
       }
     } 
     else {
