@@ -66,7 +66,7 @@ window.addEventListener("wheel", (e) => {
       // Small deltaY values, likely from a touchpad with slow scrolling (finger movement)
       if (Math.abs(e.deltaY) < 10) {
         // Increase sensitivity for small movements
-        handleScroll(e.deltaY > 0 ? -1 : 1); // Adjust for small deltaY (slow scroll)
+        handleScroll(e.deltaY > 0 ? -0.05 : 0.05); // Adjust for small deltaY (slow scroll)
       } else {
         // Regular deltaY values, likely from flick scroll (momentum)
         handleScroll(e.deltaY > 0 ? -2 : 2); // Default behavior for flicks
@@ -74,7 +74,7 @@ window.addEventListener("wheel", (e) => {
     } else {
       // Default behavior for other delta modes (mouse, etc.)
       handleScroll(e.deltaY > 0 ? -2 : 2); // Default sensitivity for mice
-    }
+    } //VERTICAL SCROLL FOR MOBILE IS ALSO BROKEN ON DESKTOP AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
   }
 }, { passive: false });
 
