@@ -575,3 +575,9 @@ hr{
   } 
 }
 
+
+/* TRY THIS ON MAC ! */
+
+html {
+  scroll-behavior: auto;
+}

@@ -59,11 +59,11 @@ window.addEventListener("wheel", (e) => {
   e.preventDefault(); // Prevent default navigation behavior (back/forward)
 
   if (e.deltaX !== 0) {
-    handleScroll(-e.deltaX * 0.05); // Horizontal scroll handling
+    handleScroll(-e.deltaX * 0.2); // Horizontal scroll handling ORIGINALLY 0.05 FOR PC
   } else if (e.deltaY !== 0) {
     // Check for touchpad scroll behavior by checking deltaMode and deltaY value range
     if (e.deltaMode == 0) {
-      handleScroll(-e.deltaY * 0.05); // Adjust for small deltaY (slow scroll)
+      handleScroll(-e.deltaY * 0.2); // Adjust for small deltaY (slow scroll)
       }
     } 
     else {
