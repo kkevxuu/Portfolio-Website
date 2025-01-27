@@ -56,21 +56,28 @@ const handleScroll = (delta) => {
 
 // scrollwheel event listener (updated for horizontal scrolling)
 window.addEventListener("wheel", (e) => {
-  /*e.preventDefault(); // Prevent default navigation behavior (back/forward)*/
+  e.preventDefault(); // Prevent default navigation behavior (back/forward)
 
   if (e.deltaX !== 0) {
-    handleScroll(-e.deltaX * 0.05); // Use horizontal scrolling (deltaX)
+    handleScroll(-e.deltaX * 0.05); // Horizontal scroll handling
   } else if (e.deltaY !== 0) {
-    // Check the size of deltaY
-    if (Math.abs(e.deltaY) < 10) {  // Small deltaY values likely from a touchpad
-      // Lower the vertical scroll sensitivity for touchpads
-      handleScroll(e.deltaY > 0 ? -0.05 : 0.05); // Increased sensitivity for touchpads
+    // Check for touchpad scroll behavior by checking deltaMode and deltaY value range
+    if (e.deltaMode === 0) {
+      // Small deltaY values, likely from a touchpad with slow scrolling (finger movement)
+      if (Math.abs(e.deltaY) < 10) {
+        // Increase sensitivity for small movements
+        handleScroll(e.deltaY > 0 ? -0.5 : 0.5); // Adjust for small deltaY (slow scroll)
+      } else {
+        // Regular deltaY values, likely from flick scroll (momentum)
+        handleScroll(e.deltaY > 0 ? -2 : 2); // Default behavior for flicks
+      }
     } else {
-      // Default behavior for mice (larger deltaY)
+      // Default behavior for other delta modes (mouse, etc.)
       handleScroll(e.deltaY > 0 ? -2 : 2); // Default sensitivity for mice
     }
   }
 }, { passive: false });
+
 
 window.addEventListener("keydown", (e) => {
   const delta = { ArrowRight: -7, ArrowLeft: 7, ArrowUp: 7, ArrowDown: -7 }[e.key];
