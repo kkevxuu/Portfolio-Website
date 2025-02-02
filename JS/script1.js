@@ -57,19 +57,20 @@ const handleScroll = (delta) => {
 // scrollwheel event listener (updated for horizontal scrolling)
 window.addEventListener("wheel", (e) => {
   e.preventDefault(); // Prevent default navigation behavior (back/forward)
-
-  if (e.deltaX !== 0) {
-    handleScroll(-e.deltaX * 0.2); // Horizontal scroll handling ORIGINALLY 0.05 FOR PC
-  } else if (e.deltaY !== 0) {
-    // Check for touchpad scroll behavior by checking deltaMode and deltaY value range
-    if (e.deltaMode == 0) {
-      handleScroll(-e.deltaY * 0.2); // Adjust for small deltaY (slow scroll)
-      }
+  console.log(`deltaX: ${e.deltaX}, deltaY: ${e.deltaY}, deltaMode: ${e.deltaMode}`);
+  if (e.deltaX !== 0) { //if its horizontal scroll
+    handleScroll(-e.deltaX * 0.2); // original 0.05 for pc
+  } else if (e.deltaY !== 0) { //if its vertical scroll
+    if (e.deltaMode == 0) { 
+      handleScroll(-e.deltaY * 0.2);
+    } else if (e.deltaMode == 1) {
+      handleScroll(e.deltaY > 0 ? -15 : 15); // apparently the speed for older mice 
     } 
-    else {
-      handleScroll(e.deltaY > 0 ? -2 : 2); // Default sensitivity for mice
-    } //VERTICAL SCROLL FOR MOBILE IS ALSO BROKEN ON DESKTOP AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 
-  }, { passive: false });
+  }
+}, { passive: false });
+
+//VERTICAL SCROLL FOR MOBILE IS ALSO BROKEN ON DESKTOP AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 
+
 
 
 window.addEventListener("keydown", (e) => {

@@ -576,8 +576,9 @@ hr{
 }
 
 
-/* TRY THIS ON MAC ! */
 
+
+/* TRY THIS*/
 html {
-  scroll-behavior: auto;
+  scroll-behavior: smooth;
 }
