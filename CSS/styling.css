@@ -582,3 +582,18 @@ hr{
 html {
   scroll-behavior: auto;
 }
+
+
+/* hiding elements before animation*/
+.projecttitle, 
+.descriptionbox1 p, 
+.descriptionbox2 p, 
+.descriptionbox3 p, 
+.descriptionbox1 h2, 
+.descriptionbox2 h2, 
+.descriptionbox3 h2, 
+.subtitle, 
+.subtext,
+.hello {
+    opacity: 0;
+}

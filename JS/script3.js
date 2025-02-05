@@ -1,6 +1,6 @@
 // ANIMATIONS
 
-  function revealText() {
+ /* function revealText() {
     const title = document.querySelector(".hello"); 
     console.log(title);
     const splitText = new SplitType(title, { types: 'chars' }); 
@@ -17,9 +17,9 @@
         }
     });
   }
-
+*/
 function revealDescription() {
-    const descriptions = document.querySelectorAll(".introductiontext1, .introductiontext2, .skills h3, .skills p, .activities h3, .activities p, .contact h3, .contact p"); // targets all <p> tags inside description boxes
+    const descriptions = document.querySelectorAll(".hello, .introductiontext1, .introductiontext2, .skills h3, .skills p, .activities h3, .activities p, .contact h3, .contact p"); // targets all <p> tags inside description boxes
     gsap.set(descriptions, { opacity: 0, y: -10 }); 
   
     gsap.to(descriptions, {
@@ -34,7 +34,7 @@ function revealDescription() {
 // trigger on page load instead
 
 document.addEventListener("DOMContentLoaded", () => {
-    revealText();
+    /*revealText();*/
     revealDescription();
   });
  

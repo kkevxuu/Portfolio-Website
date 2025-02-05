@@ -1,7 +1,7 @@
 // TEXT ANIMATIONS
 
 // title animation
-  
+  /*
   function revealText() {
     const title = document.querySelector(".projecttitle"); 
     const splitText = new SplitType(title, { types: "chars" }); // splits into characters
@@ -18,11 +18,11 @@
         }
     });
   }
-
+*/
 // description animation
   
   function revealDescription() {
-    const descriptions = document.querySelectorAll(".descriptionbox1 p, .descriptionbox2 p, .descriptionbox3 p, .descriptionbox1 h2, .descriptionbox2 h2, .descriptionbox3 h2, .subtitle, .subtext"); 
+    const descriptions = document.querySelectorAll(".projecttitle, .descriptionbox1 p, .descriptionbox2 p, .descriptionbox3 p, .descriptionbox1 h2, .descriptionbox2 h2, .descriptionbox3 h2, .subtitle, .subtext"); 
     gsap.set(descriptions, { opacity: 0, y: -10 });
   
     gsap.to(descriptions, {
@@ -37,7 +37,7 @@
 // trigger on page load instead
 
 document.addEventListener("DOMContentLoaded", () => {
-  revealText();
+ /* revealText(); */
   revealDescription();
 });
 
