@@ -5,64 +5,60 @@
         <title>Crane Chairs</title>
         <link rel="stylesheet" type="text/css" href="CSS/styling.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-        <script src="https://unpkg.com/split-type"></script>
-        <script src="JS/script2.js" defer></script>
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+        <script src="JS/script1.js" defer></script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
 
-    <body class="bodyp2">
-        <nav>
-            <div class="navleftbox">
-                <div class="logolinkbox">
-                    <a href=index.html class="logolink" draggable="false">Xu</a>
-                </div>
+    <body>
+        <div class="navbar">
+            <div class="navleft">
+                    <a href=index.html class="link">Kevin Xu</a>
             </div>
-            <div class="navrightbox">
-                <div class="navbox1">
-                    <a href=index.html class="worklink active" draggable="false">Work</a>
-                </div>
-                <div class="navbox2">
-                    <a href=aboutpage.html class="aboutlink" draggable="false">About</a>
-                </div>
+            <div class="navright">
+                    <a href=index.html class="link active">Work</a>
+                    <a href=lab.html class="link">Lab</a>
+                    <a href=aboutpage.html class="link">About</a>
             </div>
-        </nav>
-        <!--Project Information-->
-        <div class="titlebox">
-            <h1 class="projecttitle">Crane Chairs</h1>
         </div>
-        <div class="projectinfobox">
+        <div class="buttonbox">
+            <button id="back-to-top" aria-label="Back to Top"><img src="./assets/jpgs/button.png"/></button>
+        </div>
+        <!--Project Information-->
+        <div class="infobox">
+            <div class="titlebox">
+                <p class="projecttitle">Crane Chairs</p>
+            </div>
             <div class="descriptionbox1">
-                <h2>Why</h2>
                 <p>
-                    Furniture often fades into the background of everyday life, contrained by the burdens of practicality. I wanted to attempt to design a chair that brings the grace and beauty of dance into everyday life. 
+                    <div class="descriptiontitle">Domains</div>
+                    <br>-<br>Prototyping<br>Rendering
+                </p>
+            </div>
+            <div class="descriptionbox1">
+                <p>
+                    <div class="descriptiontitle">Tools</div>
+                    <br>-<br>Solidworks<br>Blender<br>Cycles<br>Photoshop<br>Laser Cutter
                 </p>
             </div>
             <div class="descriptionbox2">
-                <h2>What</h2>
                 <p>
-                    A lounge chair insired by the Josenjok (Korean) crane dance, created through deriving the form, flow, and movement of dancers from snapshots of their choreohraphy. 
-                </p>
-            </div>
-            <div class="descriptionbox3">
-                <h2>How </h2>
-                <p>
-                    Rhino 3D, painted wood, rope. 
+                    <div class="descriptiontitle">Synopsis</div>
+                    <br>-<br>A set of chairs that embody the beauty of traditional Crane Dancing.
                 </p>
             </div>
         </div>
-        <hr>
 
         <!--Images-->
-        <img class="projectimage"src="./assets/projects/cranechairs/compressed2/render_1.jpg" alt="Dynamic Chair">
+        <img class="heroimage"src="./assets/projects/cranechairs/compressed2/render_1.jpg" alt="Dynamic Chair">
         <img class="projectimage"src="./assets/projects/cranechairs/compressed2/render_4.jpg" alt="Dynamic Chair">
         <img class="projectimage"src="./assets/projects/cranechairs/compressed2/render_5.jpg" alt="Dynamic Chair">
         <img class="projectimage"src="./assets/projects/cranechairs/compressed2/render_2.jpg" alt="Dynamic Chair">
         <img class="projectimage"src="./assets/projects/cranechairs/compressed2/render_3.jpg" alt="Dynamic Chair">
         <img class="projectimage"src="./assets/projects/cranechairs/compressed2/render_6.jpg" alt="Dynamic Chair">
         <div class="bigsubbox">
-            <p class="subtitle">Can a chair be designed to bring the beauty of dance into eyeryday life? </p>
+            <p class="subtitle">Form is function: a chair designed to bring the beauty of dance into eyeryday life </p>
             <p class="subtext">The Crane dance is a traditional folk dance of the Korean ethnic group in China. It originated as imitations of the elegant movements of cranes, and dancers wear flowing clothing that enhances their movements, creating a sense of grace and dynamism in motion.  </p>
         </div>
         
@@ -115,9 +111,8 @@
         <img class="projectimage"src="./assets/projects/cranechairs/compressed2/testshot.jpg" alt="Dynamic Chair">
         <img class="projectimage"src="./assets/projects/cranechairs/render_12.png" alt="Dynamic Chair">
         <div class="footer">
-            <button id="back-to-top" aria-label="Back to Top">^</button>
+            
         </div>
-        <div id="scroll-indicator">0</div>
         <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     </body>

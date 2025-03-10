@@ -5,57 +5,54 @@
         <title>Carnegie Mellon Racing</title>
         <link rel="stylesheet" type="text/css" href="CSS/styling.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-        <script src="https://unpkg.com/split-type"></script>
-        <script src="JS/script2.js" defer></script>
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+        <script src="JS/script1.js" defer></script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
 
-    <body class="bodyp2">
-        <nav>
-            <div class="navleftbox">
-                <div class="logolinkbox">
-                    <a href=index.html class="logolink" draggable="false">Xu</a>
-                </div>
+    <body>
+        <div class="navbar">
+            <div class="navleft">
+                    <a href=index.html class="link">Kevin Xu</a>
             </div>
-            <div class="navrightbox">
-                <div class="navbox1">
-                    <a href=index.html class="worklink active" draggable="false">Work</a>
-                </div>
-                <div class="navbox2">
-                    <a href=aboutpage.html class="aboutlink" draggable="false">About</a>
-                </div>
+            <div class="navright">
+                    <a href=index.html class="link active">Work</a>
+                    <a href=lab.html class="link">Lab</a>
+                    <a href=aboutpage.html class="link">About</a>
             </div>
-        </nav>
-        <!--Project Information-->
-        <div class="titlebox">
-            <h1 class="projecttitle">Carnegie Mellon Racing</h1>
         </div>
-        <div class="projectinfobox">
+        <div class="buttonbox">
+            <button id="back-to-top" aria-label="Back to Top"><img src="./assets/jpgs/button.png"/></button>
+        </div>
+        <!--Project Information-->
+        <div class="infobox">
+            <div class="titlebox">
+                <p class="projecttitle">Carnegie Mellon Racing</p>
+            </div>
             <div class="descriptionbox1">
-                <h2>Role</h2>
                 <p>
-                    Headrest Systems Team Lead. Specializing in hardware UX, driver interface, and design for manufacturability.
+                    <div class="descriptiontitle">Domains</div>
+                    <br>-<br>Design for Manufacturing (DFM)<br>Computer-Aided Engineering (CAE)<br>User Research<br>Ergonomic Testing<br>Fabrication
+                </p>
+            </div>
+            <div class="descriptionbox1">
+                <p>
+                    <div class="descriptiontitle">Tools</div>
+                    <br>-<br>Solidworks<br>ANSYS FEA<br>CNC Machining<br>Carbon Fiber Layup<br>Welding<br>Waterjetting
                 </p>
             </div>
             <div class="descriptionbox2">
-                <h2>Task</h2>
                 <p>
-                    Led the complete redesign and manufacturing of the headrest structure on the CMR 2025 Formula SAE race car.
-                </p>
-            </div>
-            <div class="descriptionbox3">
-                <h2>Duration </h2>
-                <p>
-                    September 2024 - Present, Pittsburgh PA
+                    <div class="descriptiontitle">Synopsis</div>
+                    <br>-<br>Led the complete redesign of the carbon fiber headrest structure on a Formula SAE race car, achieving a weight reduction of 50%.
+                    
                 </p>
             </div>
         </div>
-        <hr>
 
         <!--Images-->
-        <img class="projectimage"src="./assets/projects/cmr/1.jpeg" alt="Dynamic Chair">
+        <img class="heroimage"src="./assets/projects/cmr/1.jpeg" alt="Dynamic Chair">
         <div class="bigsubbox">
             <p class="subtitle">Project is ongoing</p>
             <p class="subtext">More details can be found on resume.</p>
@@ -88,9 +85,9 @@
         </div>
         <img class="projectimage"src="./assets/projects/cmr/cmrtemp/1.png" alt="Dynamic Chair">
         <div class="footer">
-            <button id="back-to-top" aria-label="Back to Top">^</button>
+
         </div>
-        <div id="scroll-indicator">0</div>
+
         <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     </body>

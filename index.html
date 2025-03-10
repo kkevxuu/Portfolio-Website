@@ -5,78 +5,39 @@
         <title>Projects</title>
         <link rel="stylesheet" type="text/css" href="CSS/styling.css">
        <!--for google font ibm plex-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-        <script src="JS/script1.js" defer></script>
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!--<link rel="icon" type="image/png" sizes="48x48" href="favicon-48x48.png">PUT A FAVICON HERE-->
     </head>
 
-    <body class="bodyp1">
-        <nav>
-            <div class="navleftbox">
-                <div class="logolinkbox">
-                    <a href=index.html class="logolink" draggable="false">Xu</a>
-                </div>
+    <body>
+        <div class="navbar">
+            <div class="navleft">
+                    <a href=index.html class="link">Kevin Xu</a>
             </div>
-            <div class="navrightbox">
-                <div class="navbox1">
-                    <a href=index.html class="worklink active" draggable="false">Work</a>
-                </div>
-                <div class="navbox2">
-                    <a href=aboutpage.html class="aboutlink" draggable="false">About</a>
-                </div>
+            <div class="navright">
+                    <a href=index.html class="link active">Work</a>
+                    <a href=lab.html class="link">Lab</a>
+                    <a href=aboutpage.html class="link">About</a>
             </div>
-        </nav>
-            
-        <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0" draggable="false">
-            <div class="image-container">
-                <a href="chair.html" draggable="false"><img class="image" src=./assets/jpgs/chair.jpg alt = "Dynamic Chair" draggable="false" /></a>
-                <div class="image-text">Crane Chair</div>
-            </div>
-            <div class="image-container">
-                <a href="lamp.html" draggable="false"><img class="image" src=./assets/jpgs/fern.jpg alt = "Flowing Foam Models" draggable="false"/></a>
-                <div class="image-text">Fern</div>
-            </div>
-            <div class="image-container">
-                <a href="cmr.html" draggable="false"><img class="image" src=./assets/jpgs/cmr.jpg alt = "Race Car" draggable="false" /></a>
-                <div class="image-text">Carnegie Mellon Racing</div>
-            </div>
-            <div class="image-container">
-                <a href="play.html" draggable="false"><img class="image" src=./assets/jpgs/play.jpg alt = "Wearable Cardboard Contraption" draggable="false" /></a>
-                <div class="image-text">Experiments</div>
-            </div>
-            <div class="image-container">
-                <a href="sketchbook.html" draggable="false"><img class="image" src=./assets/jpgs/sketchbook.jpg alt = "Sketchbook" draggable="false" /></a>
-                <div class="image-text">Sketchbook</div>
-            </div>
-            
         </div>
-        <div id="mobile-track">
-            <div class="image-container">
-                <a href="chair.html" draggable="false"><img class="mobileimage" src=./assets/jpgs/chair.jpg alt = "Dynamic Chair"/></a>
-                <div class="mobile-image-text">Crane Chairs</div>
-            </div>
-            <div class="image-container">
-                <a href="lamp.html" draggable="false"><img class="mobileimage" src=./assets/jpgs/fern.jpg alt = "Flowing Foam Models" draggable="false"/></a>
-                <div class="mobile-image-text">Fern</div>
-            </div>
-            <div class="image-container">
-                <a href="cmr.html" draggable="false"><img class="mobileimage" src=./assets/jpgs/cmr.jpg alt = "Race Car"/></a>
-                <div class="mobile-image-text">Carnegie Mellon Racing</div>
-            </div>
-            <div class="image-container">
-                <a href="play.html" draggable="false"><img class="mobileimage" src=./assets/jpgs/play.jpg alt = "Wearable Cardboard Contraption"/></a>
-                <div class="mobile-image-text">Experiments</div>
-            </div>
-            <div class="image-container">
-                <a href="sketchbook.html" draggable="false"><img class="mobileimage" src=./assets/jpgs/sketchbook.jpg alt = "Sketchbook"/></a>
-                <div class="mobile-image-text">Sketchbook</div>
-            </div>
-            
+
+        <div class="intro">
+            Student studying Industrial Design and HCI at Carnegie Mellon University.<br>Currently designing at Carnegie Mellon Racing and Human-Computer Interaction Institute (HCII).<br>-<br>Exploring the intersections of hardware interaction design and software UX.
         </div>
-        <div class="scroll-text" id="scroll-text">Scroll↓</div>
+            
+        <div id="grid">
+            
+                <a href="chair.html" ><img class="image" src=./assets/jpgs/chair.jpg alt = "Flowing Foam Models"/></a>
+                <a href="cmr.html"><img class="image" src=./assets/jpgs/cmr.jpg alt = "High Fidelity Renders of Models"/></a>
+                <a href="spatula.html"><img class="image" src=./assets/jpgs/experiments.jpg alt = "Wearable Cardboard Contraption"/></a>
+                <a href="lamp.html"><img class="image" src=./assets/jpgs/fern.jpg alt = "Dynamic Chair" /></a>
+        </div>
+        <div class="footer">
+    
+        </div>
         <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     </body>

@@ -1,1 +1,1 @@
-Personal Portfolio Site
+Kevin Xu Industrial Design Portfolio
