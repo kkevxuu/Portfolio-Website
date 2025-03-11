@@ -147,6 +147,14 @@ a.link.active {
   margin-bottom: 5vh;
 }
 
+.smallprojectimage{
+  display: block;
+  width: 70vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5vh;
+}
+
 
 .smallsubbox{
   display: flex;
