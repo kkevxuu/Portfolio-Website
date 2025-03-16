@@ -2,7 +2,7 @@
 // Text animation
   
 function revealDescription() {
-  const descriptions = document.querySelectorAll(".projecttitle, .descriptionbox1, .descriptionbox2, .subtitle, .subtext"); 
+  const descriptions = document.querySelectorAll(".projecttitle, .descriptionbox1, .descriptionbox2"); 
   gsap.set(descriptions, { opacity: 0, y: -10 });
 
   gsap.to(descriptions, {
