@@ -67,6 +67,15 @@ body {
 .navbar a {
   color:#1D1D1F; /* highlighted color */
   text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #818181; /* Color when hovered */
+}
+
+.name:hover {
+  color: #1D1D1F;
 }
 
 a.link.active {
@@ -169,6 +178,7 @@ a.link.active {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 50px;
+  justify-content: space-between;
 }
 
 .leftdetail1{
@@ -200,9 +210,19 @@ a.link.active {
 .callout{
   color:#1D1D1F;
   margin-bottom: 0px;
-  font-size: 26px;
+  font-size: 22px;
   font-weight: 700;
 }
+
+.separatecallout{
+  color:#1D1D1F;
+  margin-bottom: 50px;
+  font-size: 22px;
+  font-weight: 700;
+  margin-left: 15vw;
+  width: 70vw;
+}
+
 
 .detailtext{
   color:#1D1D1F;
@@ -216,12 +236,14 @@ a.link.active {
   width: 34.75vw;
   height: auto;
   object-fit: contain;
+
 }
 
 .detailimagesubtitle{
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 0;
+  width: 34.75vw;
 
 }
 
@@ -231,7 +253,8 @@ a.link.active {
   margin-right: auto;
   width: fit-content;
   margin-top: -30px;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
+  width: 70vw;
 }
 
 
@@ -313,6 +336,7 @@ hr{
   font-size: 18px;
   color: #1D1D1F;
   height: 5vh;
+  transition: color 0.3s ease;
 
 
 }
