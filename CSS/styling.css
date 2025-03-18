@@ -128,6 +128,12 @@ a.link.active {
   margin-top: 0px;
 }
 
+@media (max-width: 1024px){
+  .titlebox{
+    margin-top: -20px;
+  }
+}
+
 .descriptionbox1, .descriptionbox2{
   color: #1D1D1F;
   font-size: 16px;
@@ -137,6 +143,13 @@ a.link.active {
 
 .descriptionbox2{
   width: 20%;
+}
+
+@media (max-width: 1024px){
+  .descriptionbox2{
+    width: 90vw;
+    margin-bottom: -30px;
+  }
 }
 
 .descriptiontitle{
@@ -221,10 +234,22 @@ a.link.active {
   align-items: center;
 }
 
+@media (max-width: 1024px){
+  .leftdetail2{
+  margin-right: 0vw;
+  }
+}
+
 .rightdetail{
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+@media (max-width: 1024px){
+  .rightdetail{
+    margin-bottom: -80px;
+  }
 }
 
 .statement{
@@ -233,6 +258,15 @@ a.link.active {
   font-size: 26px;
   font-weight: 700;
   margin-top: 20px;
+  
+}
+
+@media (max-width: 1024px){
+  .statement{
+   text-align: left;
+   width: 90vw;
+   margin-left: 5vw;
+  }
 }
 
 .callout{
@@ -245,6 +279,8 @@ a.link.active {
 @media (max-width: 1024px){
   .callout{
     text-align: left;
+    width: 90vw;
+    margin-left: 5vw;
   }
 }
 
@@ -253,6 +289,14 @@ a.link.active {
   margin-bottom: 0px;
   font-size: 16px;
   font-weight: 400;
+}
+
+@media (max-width: 1024px){
+  .detailtext{
+    margin-bottom: 80px;
+    width: 90vw;
+    margin-left: 5vw;
+  }
 }
 
 .detailimage{
@@ -274,14 +318,20 @@ a.link.active {
   width: fit-content;
 }
 
-.separatecallout{
+@media (max-width: 1024px){
+  .detailimagesubtitle{
+    margin-bottom: 80px;
+  }
+}
 
+.separatecallout{
   color:#1D1D1F;
   margin-bottom: 50px;
   font-size: 22px;
   font-weight: 700;
   margin-left: 15vw;
   width: 70vw;
+  margin-bottom: 0px;
 }
 
 @media (max-width: 1024px){
@@ -296,7 +346,7 @@ a.link.active {
   margin-left: auto;
   margin-right: auto;
   width: fit-content;
-  margin-top: -30px;
+
   margin-bottom: 100px;
   width: 70vw;
 }
