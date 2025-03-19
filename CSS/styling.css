@@ -3,6 +3,7 @@
 * {
   font-family: "Inter", serif;
   box-sizing: border-box;
+  color:#1D1D1F;
 }
 
 body {
@@ -224,7 +225,7 @@ a.link.active {
   display: flex;
   flex-direction: column;
   margin-right: 5vw;
-  align-items: center;
+  align-items: left;
 }
 
 .leftdetail2{
@@ -274,6 +275,7 @@ a.link.active {
   margin-bottom: 0px;
   font-size: 22px;
   font-weight: 700;
+
 }
 
 @media (max-width: 1024px){
@@ -443,7 +445,7 @@ a.link.active {
 
 hr{
   border: 0;  
-  border-top: 1px solid #1D1D1F;
+  border-top: 1px solid #818181;
   width: 92vw; 
   margin-top: 0%;
   margin-bottom: 5vh;
