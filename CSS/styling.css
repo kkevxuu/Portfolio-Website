@@ -218,6 +218,7 @@ a.link.active {
   .detailbox{
     flex-direction: column;
     width: 90vw;
+    align-items: center;
   }
 }
 
@@ -283,6 +284,7 @@ a.link.active {
     text-align: left;
     width: 90vw;
     margin-left: 5vw;
+
   }
 }
 
@@ -298,6 +300,7 @@ a.link.active {
     margin-bottom: 80px;
     width: 90vw;
     margin-left: 5vw;
+
   }
 }
 
@@ -310,6 +313,8 @@ a.link.active {
 @media (max-width: 1024px){
   .detailimage{
     width: 100vw;
+    margin-bottom: 40px;
+
   }
 }
 
@@ -323,6 +328,7 @@ a.link.active {
 @media (max-width: 1024px){
   .detailimagesubtitle{
     margin-bottom: 80px;
+    width: 90vw;
   }
 }
 
