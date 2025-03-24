@@ -516,12 +516,23 @@ hr{
   align-items: row;
   justify-content: space-between;
 }
+@media (max-width: 800px){
+  .details{
+    flex-direction: column;
+  }
+}
 
 .aboutimagebox img{
   width: 18vw;
   margin-left: 12vw;
   display: block;
   margin-top: 90px;
+}
+
+@media (max-width: 1200px){
+  .aboutimagebox img{
+    display: none;
+  }
 }
 
 .skills h3, .activities h3, .contact h3{
@@ -540,6 +551,13 @@ hr{
 .activities{
   padding-left: 50px;
   padding-right: 50px;
+}
+
+@media (max-width: 800px){
+  .activities{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
 
 .contact p a{
