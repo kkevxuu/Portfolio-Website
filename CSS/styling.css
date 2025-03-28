@@ -4,6 +4,7 @@
   font-family: "Inter", serif;
   box-sizing: border-box;
   color:#1D1D1F;
+  line-height: 1.35;
 }
 
 body {
@@ -13,6 +14,8 @@ body {
   margin: 0rem;
   overflow-x: hidden;
 }
+
+
 
 #grid {
   width: 92vw;
@@ -167,7 +170,7 @@ a.link.active {
   width: 100vw;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 50px;
+  margin-bottom: 15px;
   
 }
 
@@ -176,7 +179,7 @@ a.link.active {
   width: 92vw;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 50px;
+  margin-bottom: 15px;
 }
 
 @media (max-width: 1024px){
@@ -191,7 +194,7 @@ a.link.active {
   width: 70vw;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 50px;
+  margin-bottom: 15px;
 }
 
 @media (max-width: 1024px){
@@ -210,7 +213,6 @@ a.link.active {
   width: 70vw;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 80px;
   justify-content: space-between;
 }
 
@@ -288,6 +290,22 @@ a.link.active {
   }
 }
 
+.break20{
+  height: 20px;
+}
+
+.break50{
+  height: 50px;
+}
+
+.break100{
+  height: 100px;
+}
+
+.break150{
+  height: 150px;
+}
+
 .detailtext{
   color:#1D1D1F;
   margin-bottom: 0px;
@@ -340,6 +358,7 @@ a.link.active {
   margin-left: 15vw;
   width: 70vw;
   margin-bottom: 0px;
+  width: 50%;
 }
 
 @media (max-width: 1024px){
@@ -351,12 +370,10 @@ a.link.active {
 
 .subtitle{
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 15vw;
   width: fit-content;
-
-  margin-bottom: 100px;
-  width: 70vw;
+  width: 35vw;
+  margin-bottom: 30px;
 }
 
 @media (max-width: 1024px){
@@ -373,8 +390,7 @@ a.link.active {
   margin-left: auto;
   margin-right: auto;
   width: fit-content;
-  margin-top: -30px;
-  margin-bottom: 100px;
+
   width: 70vw;
   text-align: center;
 }
@@ -417,44 +433,12 @@ a.link.active {
 }
 
 
-/*IMAGE GRID DELETE SOON*/
-
-.image-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* create 1x2 grid */
-  grid-gap: 0.1vw; /* space between images */
-  width: 70vw; 
-  margin: 0 auto; /* center grid */
-  margin-bottom: 5vh;
-}
-
-.image-grid img {
-  width: 100%; /* images fill grid cell */
-  height: 100%;
-  object-fit: cover; /* images scale and crop to fill grid cell */
-  display: block; /* removes bottom space */
-  align-self: center; /* align images vertically within cell */
-}
-
-/* additional wrapper to control overall grid height */
-
-.image-grid-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%; /* full width ofcontainer */
-  height: auto; /* height adapts to content */
-  overflow: hidden; /* prevents overflow issues */
-}
-
-/*IMAGE GRID DELETE SOON*/
-
 hr{
   border: 0;  
   border-top: 1px solid #818181;
   width: 92vw; 
   margin-top: 0%;
-  margin-bottom: 5vh;
+  margin-bottom: 40px;
 }
 
 .nextproject{
