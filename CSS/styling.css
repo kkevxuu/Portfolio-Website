@@ -379,6 +379,7 @@ a.link.active {
 @media (max-width: 1024px){
   .subtitle{
     width: 90vw;
+    margin-left: 5vw;
   }
 }
 
